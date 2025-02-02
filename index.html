@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alain Yang - Full Stack Developer</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-buttons">
+        <button class="print-btn" onclick="window.print()" aria-label="Print / Download PDF">
+            <span>&#128438;</span>
+        </button>
+        <button class="lang-toggle" onclick="toggleLang()" aria-label="Toggle language">
+            <span class="lang-text">EN</span>
+        </button>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <span class="icon-sun">&#9728;</span>
+            <span class="icon-moon">&#9790;</span>
+        </button>
+    </div>
+    <div class="container">
+        <header>
+            <div class="profile-img">
+                <img src="me2.jpg" alt="Alain Yang">
+            </div>
+            <h1>Alain Yang</h1>
+            <p class="title" data-en="Full Stack Developer" data-fr="Développeur Full Stack" data-it="Sviluppatore Full Stack">Full Stack Developer</p>
+            <div class="contact-info">
+                <a href="mailto:yangalain.fr@gmail.com">yangalain.fr@gmail.com</a>
+                <a href="https://github.com/Feifei75" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/alain-yang-10863088/" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2 data-en="About Me" data-fr="À propos" data-it="Chi sono">About Me</h2>
+                <p class="about-text" data-en="Full Stack Developer with over 10 years of experience in web development. Currently building SaaS platforms for scientific workflows at Molecule Science in Montpellier, France. Skilled in TypeScript, modern frontend frameworks, and complex data management systems. Passionate about AI-assisted development and leveraging tools like GitHub Copilot and Claude to boost productivity." data-fr="Développeur Full Stack avec plus de 10 ans d'expérience en développement web. Actuellement en charge de la création de plateformes SaaS pour les workflows scientifiques chez Molecule Science à Montpellier, France. Compétent en TypeScript, frameworks frontend modernes et systèmes de gestion de données complexes. Passionné par le développement assisté par IA et l'utilisation d'outils comme GitHub Copilot et Claude pour améliorer la productivité." data-it="Sviluppatore Full Stack con oltre 10 anni di esperienza nello sviluppo web. Attualmente sviluppo piattaforme SaaS per flussi di lavoro scientifici presso Molecule Science a Montpellier, Francia. Competente in TypeScript, framework frontend moderni e sistemi di gestione dati complessi. Appassionato di sviluppo assistito da IA e utilizzo di strumenti come GitHub Copilot e Claude per aumentare la produttività.">
+                    Full Stack Developer with over 10 years of experience in web development.
+                    Currently building SaaS platforms for scientific workflows at Molecule Science in Montpellier, France.
+                    Skilled in TypeScript, modern frontend frameworks, and complex data management systems.
+                    Passionate about AI-assisted development and leveraging tools like GitHub Copilot and Claude to boost productivity.
+                </p>
+            </section>
+
+            <section id="experience">
+                <h2 data-en="Experience" data-fr="Expérience" data-it="Esperienza">Experience</h2>
+
+                <div class="experience-item">
+                    <h3 data-en="Full Stack Engineer" data-fr="Ingénieur Full Stack" data-it="Ingegnere Full Stack">Full Stack Engineer</h3>
+                    <p class="company">Molecule Science</p>
+                    <p class="date" data-en="Mar 2022 - Present" data-fr="Mars 2022 - Présent" data-it="Mar 2022 - Presente">Mar 2022 - Present</p>
+                    <div class="description">
+                        <ul>
+                            <li data-en="Developing a SaaS platform for scientific workflows" data-fr="Développement d'une plateforme SaaS pour les workflows scientifiques" data-it="Sviluppo di una piattaforma SaaS per flussi di lavoro scientifici">Developing a SaaS platform for scientific workflows</li>
+                            <li data-en="Building complex data management tools in TypeScript" data-fr="Création d'outils de gestion de données complexes en TypeScript" data-it="Creazione di strumenti di gestione dati complessi in TypeScript">Building complex data management tools in TypeScript</li>
+                            <li data-en="Full stack development with modern web technologies" data-fr="Développement full stack avec des technologies web modernes" data-it="Sviluppo full stack con tecnologie web moderne">Full stack development with modern web technologies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 data-en="Frontend Developer" data-fr="Développeur Frontend" data-it="Sviluppatore Frontend">Frontend Developer</h3>
+                    <p class="company">eMoteev</p>
+                    <p class="date" data-en="Jul 2020 - May 2022" data-fr="Juil 2020 - Mai 2022" data-it="Lug 2020 - Mag 2022">Jul 2020 - May 2022</p>
+                    <div class="description">
+                        <ul>
+                            <li data-en="Frontend development in the Greater Paris region" data-fr="Développement frontend dans la région parisienne" data-it="Sviluppo frontend nella regione di Parigi">Frontend development in the Greater Paris region</li>
+                            <li data-en="Building interactive user interfaces" data-fr="Création d'interfaces utilisateur interactives" data-it="Creazione di interfacce utente interattive">Building interactive user interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 data-en="Creative Designer" data-fr="Designer Créatif" data-it="Designer Creativo">Creative Designer</h3>
+                    <p class="company">eMoteev</p>
+                    <p class="date" data-en="Jul 2019 - Jul 2020" data-fr="Juil 2019 - Juil 2020" data-it="Lug 2019 - Lug 2020">Jul 2019 - Jul 2020</p>
+                    <div class="description">
+                        <ul>
+                            <li data-en="Rich media creatives development" data-fr="Développement de créations rich media" data-it="Sviluppo di creatività rich media">Rich media creatives development</li>
+                            <li data-en="HTML/CSS programming for interactive content" data-fr="Programmation HTML/CSS pour contenu interactif" data-it="Programmazione HTML/CSS per contenuti interattivi">HTML/CSS programming for interactive content</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 data-en="Information Technology Assistant" data-fr="Assistant Informatique" data-it="Assistente Informatico">Information Technology Assistant</h3>
+                    <p class="company">Cité Scolaire Chaptal</p>
+                    <p class="date" data-en="Sep 2011 - Sep 2012" data-fr="Sept 2011 - Sept 2012" data-it="Set 2011 - Set 2012">Sep 2011 - Sep 2012</p>
+                    <div class="description">
+                        <ul>
+                            <li data-en="IT systems and educational software support" data-fr="Support des systèmes informatiques et logiciels éducatifs" data-it="Supporto sistemi informatici e software educativi">IT systems and educational software support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 data-en="Developer / Manager" data-fr="Développeur / Gérant" data-it="Sviluppatore / Manager">Developer / Manager</h3>
+                    <p class="company">DevCorp</p>
+                    <p class="date" data-en="Jan 2009 - Jan 2010" data-fr="Jan 2009 - Jan 2010" data-it="Gen 2009 - Gen 2010">Jan 2009 - Jan 2010</p>
+                    <div class="description">
+                        <ul>
+                            <li data-en="Custom web application development" data-fr="Développement d'applications web sur mesure" data-it="Sviluppo di applicazioni web personalizzate">Custom web application development</li>
+                            <li data-en="Client project management" data-fr="Gestion de projets clients" data-it="Gestione progetti clienti">Client project management</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="education">
+                <h2 data-en="Education" data-fr="Formation" data-it="Formazione">Education</h2>
+
+                <div class="education-item">
+                    <h3 data-en="Bachelor's Degree - Computer Engineering" data-fr="Licence - Ingénierie Informatique" data-it="Laurea - Ingegneria Informatica">Bachelor's Degree - Computer Engineering</h3>
+                    <p class="school">EPITECH - European Institute of Technology</p>
+                    <p class="date">2007 - 2010</p>
+                    <div class="description" data-en="Intensive programming curriculum with focus on practical projects" data-fr="Formation intensive en programmation axée sur les projets pratiques" data-it="Curriculum intensivo di programmazione focalizzato su progetti pratici">
+                        Intensive programming curriculum with focus on practical projects
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <h3 data-en="Certificate - Computer Science (Java/J2E)" data-fr="Certificat - Informatique (Java/J2E)" data-it="Certificato - Informatica (Java/J2E)">Certificate - Computer Science (Java/J2E)</h3>
+                    <p class="school">Humanbooster</p>
+                    <p class="date">2019</p>
+                    <div class="description">
+                        Java - Spring - REST - Hibernate - Servlet - JPA
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2 data-en="Skills" data-fr="Compétences" data-it="Competenze">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4 data-en="Languages" data-fr="Langages" data-it="Linguaggi">Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Rich Media</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Hibernate</span>
+                            <span class="skill-tag">JPA</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-en="Tools" data-fr="Outils" data-it="Strumenti">Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-en="AI Development" data-fr="Développement IA" data-it="Sviluppo IA">AI Development</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GitHub Copilot</span>
+                            <span class="skill-tag">Claude AI</span>
+                            <span class="skill-tag">Prompt Engineering</span>
+                            <span class="skill-tag" data-en="AI-Assisted Coding" data-fr="Programmation assistée par IA" data-it="Programmazione assistita da IA">AI-Assisted Coding</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Alain Yang. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const isLight = document.body.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        }
+
+        function toggleLang() {
+            const currentLang = localStorage.getItem('lang') || 'fr';
+            const langs = ['fr', 'en', 'it'];
+            const currentIndex = langs.indexOf(currentLang);
+            const newLang = langs[(currentIndex + 1) % langs.length];
+            setLang(newLang);
+            localStorage.setItem('lang', newLang);
+        }
+
+        function setLang(lang) {
+            document.querySelectorAll('[data-en]').forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (text) el.textContent = text;
+            });
+            const labels = { fr: 'EN', en: 'IT', it: 'FR' };
+            document.querySelector('.lang-text').textContent = labels[lang];
+            document.documentElement.lang = lang;
+        }
+
+        // Load saved theme (default: light)
+        if (localStorage.getItem('theme') !== 'dark') {
+            document.body.classList.add('light-mode');
+        }
+
+        // Load saved language (default: fr)
+        const savedLang = localStorage.getItem('lang') || 'fr';
+        setLang(savedLang);
+    </script>
+</body>
+</html>
