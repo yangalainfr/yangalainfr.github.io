@@ -477,7 +477,7 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     .contact-info a[href^="https://github"]::after {
-        content: " (github.com/Feifei75)";
+        content: " (github.com/yangalainfr)";
     }
 
     .contact-info a[href^="https://www.linkedin"]::after {
