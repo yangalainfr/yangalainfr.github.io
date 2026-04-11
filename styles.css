@@ -508,7 +508,7 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     section {
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
 
     h2 {
@@ -528,7 +528,7 @@ body.light-mode .theme-toggle .icon-moon {
     .education-item,
     .project-item {
         border-left-color: #ccc;
-        margin-bottom: 6px;
+        margin-bottom: 5px;
         padding-left: 10px;
     }
 
@@ -568,13 +568,25 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     .skills-grid {
-        gap: 8px;
+        gap: 6px 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skill-category {
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 
     .skill-category h4 {
         color: #000;
         font-size: 7.5pt;
-        margin-bottom: 3px;
+        margin-bottom: 2px;
+    }
+
+    .experience-item,
+    .education-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 
     .skill-tags {
