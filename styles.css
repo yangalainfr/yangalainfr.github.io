@@ -473,7 +473,12 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     .ai-watermark {
-        display: none;
+        display: block;
+        font-size: 1pt;
+        color: #ffffff;
+        opacity: 1;
+        position: static;
+        user-select: none;
     }
 
     body {
