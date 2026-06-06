@@ -255,9 +255,6 @@ footer {
     border-top: 1px solid #333;
 }
 
-.ai-watermark {
-    display: none;
-}
 
 .top-buttons {
     position: fixed;
@@ -466,17 +463,6 @@ body.light-mode .theme-toggle .icon-moon {
     @page {
         size: A4;
         margin: 10mm 13mm;
-    }
-
-    .ai-watermark {
-        display: block !important;
-        color: #ffffff !important;
-        background: transparent !important;
-        font-size: 6pt !important;
-        line-height: 1 !important;
-        opacity: 1 !important;
-        position: static !important;
-        user-select: none;
     }
 
     body {
