@@ -536,9 +536,18 @@ body.light-mode .theme-toggle .icon-moon {
         content: " linkedin.com/in/alain-yang-10863088";
     }
 
+    .contact-info a[href^="https://les-minouilles"]::after {
+        content: " les-minouilles.fr";
+    }
+
     .contact-info a[href^="https://github"],
-    .contact-info a[href^="https://www.linkedin"] {
+    .contact-info a[href^="https://www.linkedin"],
+    .contact-info a[href^="https://les-minouilles"] {
         font-size: 0;
+    }
+
+    .contact-info a[href^="https://les-minouilles"]::after {
+        font-size: 7pt;
     }
 
     .contact-info a[href^="https://github"]::after,
