@@ -107,6 +107,41 @@ h2 {
     font-size: 0.95rem;
 }
 
+.about-highlights {
+    list-style: none;
+    margin: 14px auto 0;
+    width: fit-content;
+    max-width: 100%;
+    display: grid;
+    gap: 6px;
+}
+
+.about-highlights li {
+    color: #c4c8cd;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    padding-left: 18px;
+    position: relative;
+}
+
+.about-highlights li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3b82f6;
+}
+
+.about-highlights strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+#about {
+    margin-bottom: 18px;
+}
+
 .experience-item,
 .education-item,
 .project-item {
@@ -342,6 +377,14 @@ body.light-mode .about-text {
     color: #4b5563;
 }
 
+body.light-mode .about-highlights li {
+    color: #4b5563;
+}
+
+body.light-mode .about-highlights strong {
+    color: #111827;
+}
+
 body.light-mode .experience-item,
 body.light-mode .education-item,
 body.light-mode .project-item {
@@ -418,7 +461,7 @@ body.light-mode .theme-toggle .icon-moon {
 @media print {
     @page {
         size: A4;
-        margin: 12mm 14mm;
+        margin: 10mm 13mm;
     }
 
     body {
@@ -486,11 +529,11 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     .contact-info a[href^="https://github"]::after {
-        content: " (github.com/yangalainfr)";
+        content: " github.com/yangalainfr";
     }
 
     .contact-info a[href^="https://www.linkedin"]::after {
-        content: " (linkedin.com/in/alain-yang-10863088)";
+        content: " linkedin.com/in/alain-yang-10863088";
     }
 
     .contact-info a[href^="https://github"],
@@ -508,15 +551,15 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     section {
-        margin-bottom: 6px;
+        margin-bottom: 4px;
     }
 
     h2 {
         color: #000;
         border-bottom-color: #333;
         font-size: 10pt;
-        margin-bottom: 6px;
-        padding-bottom: 3px;
+        margin-bottom: 4px;
+        padding-bottom: 2px;
     }
 
     .about-text {
@@ -524,11 +567,31 @@ body.light-mode .theme-toggle .icon-moon {
         font-size: 7.5pt;
     }
 
+    .about-highlights {
+        margin-top: 3px;
+        gap: 1px;
+    }
+
+    .about-highlights li {
+        color: #333;
+        font-size: 7.5pt;
+        line-height: 1.3;
+        padding-left: 11px;
+    }
+
+    .about-highlights li::before {
+        color: #555;
+    }
+
+    .about-highlights strong {
+        color: #000;
+    }
+
     .experience-item,
     .education-item,
     .project-item {
         border-left-color: #ccc;
-        margin-bottom: 5px;
+        margin-bottom: 4px;
         padding-left: 10px;
     }
 
