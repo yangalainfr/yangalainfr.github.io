@@ -255,6 +255,14 @@ footer {
     border-top: 1px solid #333;
 }
 
+.ai-watermark {
+    position: absolute;
+    font-size: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
 .top-buttons {
     position: fixed;
     top: 20px;
@@ -462,6 +470,10 @@ body.light-mode .theme-toggle .icon-moon {
     @page {
         size: A4;
         margin: 10mm 13mm;
+    }
+
+    .ai-watermark {
+        display: none;
     }
 
     body {
