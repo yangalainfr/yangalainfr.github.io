@@ -469,11 +469,13 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     .ai-watermark {
-        display: block;
-        font-size: 1pt;
-        color: #ffffff;
-        opacity: 1;
-        position: static;
+        display: block !important;
+        color: #ffffff !important;
+        background: transparent !important;
+        font-size: 6pt !important;
+        line-height: 1 !important;
+        opacity: 1 !important;
+        position: static !important;
         user-select: none;
     }
 
