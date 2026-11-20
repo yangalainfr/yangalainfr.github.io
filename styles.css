@@ -462,22 +462,27 @@ body.light-mode .theme-toggle .icon-moon {
 @media print {
     @page {
         size: A4;
-        margin: 10mm 13mm;
+        margin: 11mm 14mm;
+    }
+
+    * {
+        background: transparent !important;
+        box-shadow: none !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     body {
         background: #fff;
         padding: 0;
-        color: #000;
-        font-size: 7.5pt;
-        line-height: 1.2;
+        color: #1f2937;
+        font-size: 8pt;
+        line-height: 1.3;
     }
 
     .container {
         max-width: 100%;
-        box-shadow: none;
         border-radius: 0;
-        background: #fff;
     }
 
     .top-buttons {
@@ -485,13 +490,12 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     header {
-        background: #fff;
-        color: #000;
-        border-bottom: 1px solid #333;
-        padding: 8px 15px;
+        color: #111827;
+        border-bottom: 2px solid #3b82f6;
+        padding: 0 0 8px;
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 18px;
         text-align: left;
     }
 
@@ -500,33 +504,34 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     .profile-img {
-        width: 45px;
-        height: 45px;
-        border: 1px solid #333;
+        width: 56px;
+        height: 56px;
+        border: 2px solid #3b82f6;
         flex-shrink: 0;
         margin: 0;
     }
 
     h1 {
-        color: #000;
-        font-size: 13pt;
-        margin-bottom: 1px;
+        color: #111827;
+        font-size: 16pt;
+        margin-bottom: 2px;
     }
 
     .title {
-        color: #555;
-        font-size: 9pt;
-        margin-bottom: 4px;
+        color: #2563eb;
+        font-size: 10.5pt;
+        font-weight: 500;
+        margin-bottom: 6px;
     }
 
     .contact-info {
-        gap: 10px;
+        gap: 14px;
         justify-content: flex-start;
     }
 
     .contact-info a {
-        color: #333;
-        font-size: 7pt;
+        color: #4b5563;
+        font-size: 8pt;
     }
 
     .contact-info a[href^="https://github"]::after {
@@ -547,101 +552,110 @@ body.light-mode .theme-toggle .icon-moon {
         font-size: 0;
     }
 
-    .contact-info a[href^="https://les-minouilles"]::after {
-        font-size: 7pt;
-    }
-
     .contact-info a[href^="https://github"]::after,
-    .contact-info a[href^="https://www.linkedin"]::after {
-        font-size: 7pt;
+    .contact-info a[href^="https://www.linkedin"]::after,
+    .contact-info a[href^="https://les-minouilles"]::after {
+        font-size: 8pt;
     }
 
     main {
-        padding: 8px 15px;
+        padding: 10px 0 0;
     }
 
     section {
-        margin-bottom: 4px;
+        margin-bottom: 9px;
+    }
+
+    #about {
+        margin-bottom: 9px;
     }
 
     h2 {
-        color: #000;
-        border-bottom-color: #333;
-        font-size: 10pt;
-        margin-bottom: 4px;
-        padding-bottom: 2px;
+        color: #111827;
+        border-bottom: 2px solid #3b82f6;
+        font-size: 11.5pt;
+        margin-bottom: 5px;
+        padding-bottom: 1px;
+        break-after: avoid;
+        page-break-after: avoid;
     }
 
     .about-text {
-        color: #333;
-        font-size: 7.5pt;
+        color: #374151;
+        font-size: 8pt;
     }
 
     .about-highlights {
-        margin-top: 3px;
+        margin-top: 4px;
         gap: 1px;
     }
 
     .about-highlights li {
-        color: #333;
-        font-size: 7.5pt;
-        line-height: 1.3;
-        padding-left: 11px;
+        color: #374151;
+        font-size: 8pt;
+        line-height: 1.35;
+        padding-left: 12px;
     }
 
     .about-highlights li::before {
-        color: #555;
+        color: #3b82f6;
     }
 
     .about-highlights strong {
-        color: #000;
+        color: #111827;
     }
 
     .experience-item,
     .education-item,
     .project-item {
-        border-left-color: #ccc;
-        margin-bottom: 4px;
-        padding-left: 10px;
+        border-left: 2px solid #93c5fd;
+        margin-bottom: 6px;
+        padding-left: 11px;
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 
     .experience-item h3,
     .education-item h3,
     .project-item h3 {
-        color: #000;
-        font-size: 8.5pt;
+        color: #111827;
+        font-size: 9pt;
         margin-bottom: 0;
     }
 
     .company,
     .school {
-        color: #555;
-        font-size: 7.5pt;
+        color: #2563eb;
+        font-size: 8pt;
         margin-bottom: 0;
     }
 
     .date {
-        color: #666;
-        font-size: 7pt;
-        margin-bottom: 2px;
+        color: #6b7280;
+        font-size: 7.5pt;
+        margin-bottom: 1px;
     }
 
     .description {
-        color: #333;
-        font-size: 7.5pt;
+        color: #374151;
+        font-size: 8pt;
     }
 
     .description ul {
         margin-top: 1px;
-        padding-left: 14px;
+        padding-left: 15px;
     }
 
     .description li {
         margin-bottom: 0;
     }
 
+    .description li::marker {
+        color: #3b82f6;
+    }
+
     .skills-grid {
-        gap: 6px 10px;
+        gap: 6px 12px;
         grid-template-columns: repeat(4, 1fr);
     }
 
@@ -651,15 +665,9 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     .skill-category h4 {
-        color: #000;
-        font-size: 7.5pt;
-        margin-bottom: 2px;
-    }
-
-    .experience-item,
-    .education-item {
-        page-break-inside: avoid;
-        break-inside: avoid;
+        color: #111827;
+        font-size: 8pt;
+        margin-bottom: 3px;
     }
 
     .skill-tags {
@@ -667,12 +675,11 @@ body.light-mode .theme-toggle .icon-moon {
     }
 
     .skill-tag {
-        background: none;
-        color: #333;
-        border-color: #999;
-        padding: 1px 5px;
-        font-size: 7pt;
-        border-radius: 3px;
+        color: #2563eb;
+        border: 1px solid #93c5fd;
+        padding: 0 5px;
+        font-size: 7.5pt;
+        border-radius: 4px;
     }
 
     footer {
@@ -681,11 +688,6 @@ body.light-mode .theme-toggle .icon-moon {
 
     a {
         text-decoration: none;
-    }
-
-    * {
-        background: transparent !important;
-        box-shadow: none !important;
     }
 }
 
